@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114874688187121030}
   m_Layer: 8
   m_Name: Burger
-  m_TagString: Tile
+  m_TagString: Burger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

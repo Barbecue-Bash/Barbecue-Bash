@@ -20,10 +20,10 @@ MonoBehaviour:
     y: 30
     width: 1440
     height: 850
-  m_MinSize: {x: 508, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 679, y: 471}
+  m_MaxSize: {x: 14002, y: 14021}
   vertical: 0
-  controlID: 5781
+  controlID: 12120
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -49,7 +49,7 @@ MonoBehaviour:
     x: 286
     y: 49
     width: 860
-    height: 494
+    height: 513
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
   m_Stats: 0
@@ -58,17 +58,17 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -159
-    m_HBaseRangeMax: 159
-    m_VBaseRangeMin: -119.25
-    m_VBaseRangeMax: 119.25
+    m_HBaseRangeMin: -165.33334
+    m_HBaseRangeMax: 165.33334
+    m_VBaseRangeMin: -124
+    m_VBaseRangeMax: 124
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoom: 0
@@ -79,24 +79,24 @@ MonoBehaviour:
       x: 0
       y: 17
       width: 860
-      height: 477
-    m_Scale: {x: 2, y: 2}
-    m_Translation: {x: 430, y: 238.5}
+      height: 496
+    m_Scale: {x: 2.1082664, y: 2.1082664}
+    m_Translation: {x: 430, y: 250.3548}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -215
-      y: -119.25
-      width: 430
-      height: 238.5
+      x: -203.95905
+      y: -118.74913
+      width: 407.9181
+      height: 235.26439
     m_MinimalGUI: 1
   m_defaultScale: 2
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1720, y: 988}
+  m_LastWindowPixelSize: {x: 1720, y: 1026}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -120,10 +120,10 @@ MonoBehaviour:
     y: 0
     width: 1148
     height: 850
-  m_MinSize: {x: 406, y: 492}
-  m_MaxSize: {x: 10002, y: 14042}
+  m_MinSize: {x: 402, y: 471}
+  m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 5782
+  controlID: 12121
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,11 +143,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1148
-    height: 515
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+    height: 534
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 5735
+  controlID: 12122
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,9 +165,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 284
-    height: 515
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    height: 534
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -198,12 +198,12 @@ MonoBehaviour:
     x: 0
     y: 49
     width: 282
-    height: 494
+    height: 513
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c82f0000
-    m_LastClickedID: 12232
-    m_ExpandedIDs: 58c0ffffd2f8ffff28f9ffffd8fbffff00000000c82f0000
+    m_SelectedIDs: c4250000
+    m_LastClickedID: 9668
+    m_ExpandedIDs: d4eaffffd8fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -243,9 +243,9 @@ MonoBehaviour:
     x: 284
     y: 0
     width: 864
-    height: 515
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+    height: 534
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 8}
@@ -290,11 +290,11 @@ MonoBehaviour:
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
-    showFog: 0
+    showFog: 1
     showMaterialUpdate: 0
-    showSkybox: 0
-    showFlares: 0
-    showImageEffects: 0
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 1
   grid:
     xGrid:
       m_Target: 0
@@ -313,9 +313,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1004.73755
+    m_Target: 10
     speed: 2
-    m_Value: 1004.73755
+    m_Value: 10
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -341,9 +341,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 515
+    y: 534
     width: 1148
-    height: 335
+    height: 316
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 10}
@@ -375,9 +375,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 564
+    y: 583
     width: 1146
-    height: 314
+    height: 295
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -401,7 +401,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: cc240000
     m_LastClickedID: 9420
-    m_ExpandedIDs: 00000000cc24000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000cc2400003225000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -429,7 +429,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000cc24000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000cc2400003225000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -454,9 +454,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: c82f0000
-    m_LastClickedInstanceID: 12232
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: c4250000
+    m_LastClickedInstanceID: 9668
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -528,14 +528,15 @@ MonoBehaviour:
     y: 0
     width: 292
     height: 850
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
   - {fileID: 14}
-  m_Selected: 1
-  m_LastSelected: 0
+  - {fileID: 15}
+  m_Selected: 0
+  m_LastSelected: 2
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -576,6 +577,37 @@ MonoBehaviour:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12157, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AutoRepaintOnSceneChange: 0
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Services
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_DepthBufferBits: 0
+  m_Pos:
+    serializedVersion: 2
+    x: 1150
+    y: 94
+    width: 290
+    height: 730
+  m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
+  m_GlobalObjectTypeName: 
+  m_RegisteredViewURLs:
+  - https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
+  m_RegisteredViewInstances:
+  - {fileID: 0}
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 363648761, guid: 29b3067e8e3554a4d9b3cf288ca13799, type: 3}
   m_Name: 
@@ -594,10 +626,10 @@ MonoBehaviour:
     y: 49
     width: 290
     height: 829
-  activeTab: 0
+  activeTab: 1
   branchesTab:
     activeBranchNode:
-      Label: 
+      Label: master
     localRoot:
       Label: 
     mode: 0
@@ -607,47 +639,85 @@ MonoBehaviour:
       Label: 
   changesTab:
     commitBody: 
-    commitMessage: Added food images and changed the color of the background to score.
+    commitMessage: 
     currentBranch: master
     horizontalScroll: {x: 0, y: 0}
     tree:
       entries: []
       entryCommitTargets:
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
-      - All: 1
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
+      - All: 0
       foldedTreeEntries: []
   historyTab:
     detailsScroll: {x: 0, y: 0}
@@ -660,25 +730,25 @@ MonoBehaviour:
       entryCommitTargets: []
       foldedTreeEntries: []
     history:
-    - CommitID: 8ca687b1e8531f0798e7336d52c34dfe0a43c507
+    - CommitID: 17f0e87fee628a924321d4c2fe73e8c6d3758ccd
       MergeA: 
       MergeB: 
       AuthorName: jackthias
       AuthorEmail: jackthias@pummelhead.com
       CommitEmail: jackthias@pummelhead.com
       CommitName: jackthias
-      Summary: Added the panels that will be the backgrounds for the UI.
-      Description: Added the panels that will be the backgrounds for the UI.
+      Summary: Changes to directory.
+      Description: Changes to directory.
       Changes: []
-    - CommitID: 14a1c58f57f581698eaff0cb98ffe8c5e25a2df0
+    - CommitID: 7c4c7b09fa1023caa99fa4d69412fe2f379652b6
       MergeA: 
       MergeB: 
       AuthorName: jackthias
       AuthorEmail: jackthias@pummelhead.com
       CommitEmail: jackthias@pummelhead.com
       CommitName: jackthias
-      Summary: Initial commit
-      Description: Initial commit
+      Summary: Added prefabs for food objects.
+      Description: Added prefabs for food objects.
       Changes: []
     - CommitID: ce6b5c2729d20be226af5578789c3d786e24227c
       MergeA: 
@@ -721,11 +791,11 @@ MonoBehaviour:
       Description: Initial commit
       Changes: []
   settingsTab:
-    gitName: 
-    gitEmail: 
+    gitName: jackthias
+    gitEmail: jackthias@pummelhead.com
     gitIgnoreRulesSelection: 0
     initDirectory: 
     scroll: {x: 0, y: 0}
     lockedFiles: []
     repositoryRemoteName: origin
-    repositoryRemoteUrl: https://github.com/Barbecue-Bash/Barbecue-Bash.git
+    repositoryRemoteUrl: git@github.com:Barbecue-Bash/Barbecue-Bash.git

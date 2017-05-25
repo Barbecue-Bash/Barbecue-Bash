@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114469470867209498}
   m_Layer: 8
   m_Name: RIbs
-  m_TagString: Tile
+  m_TagString: Ribs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
