@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 52845176}
   - component: {fileID: 52845175}
   m_Layer: 5
-  m_Name: New Sprite
+  m_Name: ScoreBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,12 +218,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 393baf9cbeb76497fad2ed302fa432e0, type: 3}
   m_Color: {r: 0.9607844, g: 0.48235297, b: 0.48235297, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 0.1540958, y: 0.17804493}
+  m_Size: {x: 0.118951306, y: 0.1646438}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 1
 --- !u!4 &52845176
@@ -233,8 +233,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 52845174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.94, y: 0.02, z: 1}
-  m_LocalScale: {x: 27.1579, y: 62.2021, z: 1}
+  m_LocalPosition: {x: 5.15, y: -0.066, z: 1}
+  m_LocalScale: {x: 27.1579, y: 62, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 1607844432}
   - component: {fileID: 1607844431}
   m_Layer: 5
-  m_Name: New Sprite (1)
+  m_Name: BoardBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -424,12 +424,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: d4ef8f2ce8ec34629a7b2a61fab60db4, type: 3}
   m_Color: {r: 1, g: 0.5, b: 0.5, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 0.17606598, y: 0.17890419}
+  m_Size: {x: 0.17410365, y: 0.16461763}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 1
 --- !u!4 &1607844432
@@ -439,7 +439,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1607844430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8, y: -0.05, z: 1}
+  m_LocalPosition: {x: -1.439, y: -0.066, z: 1}
   m_LocalScale: {x: 62, y: 62, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
