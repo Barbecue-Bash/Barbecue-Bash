@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61937591100611608}
   - component: {fileID: 114412673053745968}
   m_Layer: 8
-  m_Name: Ribs
+  m_Name: RIbs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
