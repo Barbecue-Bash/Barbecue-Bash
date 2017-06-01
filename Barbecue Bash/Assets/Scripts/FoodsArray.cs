@@ -77,7 +77,7 @@ public class FoodsArray {
 		}
 
 		if (food.Column != 7) {
-			for (int col = food.Column + 1; col < 8; col++) {
+			for (int col = food.Column + 1; col < Constants.Columns; col++) {
 				if (foods[food.Row, col].GetComponent<Food>().IsSameType(food)) {
 					matches.Add(foods[food.Row, col]);
 				} else {
@@ -86,7 +86,7 @@ public class FoodsArray {
 			}
 		}
 
-		if (matches.Count < 3) {
+		if (matches.Count < Constants.MinimumMatches) {
 			matches.Clear();
 		}
 
@@ -109,7 +109,7 @@ public class FoodsArray {
 		}
 
 		if (food.Row != 7) {
-			for (int row = food.Row + 1; row < 8; row++) {
+			for (int row = food.Row + 1; row < Constants.Rows; row++) {
 				if (foods[row, food.Column].GetComponent<Food>().IsSameType(food)) {
 					matches.Add(foods[row, food.Column]);
 				} else {
@@ -118,7 +118,7 @@ public class FoodsArray {
 			}
 		}
 
-		if (matches.Count < 3) {
+		if (matches.Count < Constants.MinimumMatches) {
 			matches.Clear();
 		}
 
@@ -152,9 +152,9 @@ public class FoodsArray {
 	public AlteredFoodInfo Collapse(IEnumerable<int> cols) {
 		AlteredFoodInfo collapseInfo = new AlteredFoodInfo();
 		foreach (var col in cols) {
-			for (int row = 0; row < 7; row++) {
+			for (int row = 0; row < Constants.Rows - 1; row++) {
 				if (foods[row, col] == null) {
-					for (int row2 = row + 1; row2 < 8; row2++) {
+					for (int row2 = row + 1; row2 < Constants.Rows; row2++) {
 						collapseInfo.MaxDistance = row2 - row;
 
 						foods[row, col].GetComponent<Food>().Row = row;
@@ -171,7 +171,7 @@ public class FoodsArray {
 
 	public IEnumerable<FoodInfo> GetEmptyItemsOnColumn(int col) {
 		List<FoodInfo> emptyItems = new List<FoodInfo>();
-		for (int row = 0; row < 8; row++) {
+		for (int row = 0; row < Constants.Rows; row++) {
 			if (foods[row, col] == null) {
 				emptyItems.Add(new FoodInfo() {Row = row, Column = col});
 			}

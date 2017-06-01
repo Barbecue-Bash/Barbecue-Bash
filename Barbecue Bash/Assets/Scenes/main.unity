@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTimed: 0
-  startTime: 0
+  startTime: 300
   ScoreText: {fileID: 460095246}
   TimerText: {fileID: 1083326712}
   FoodTileOptions:
