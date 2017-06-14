@@ -2,19 +2,43 @@
 using System.Collections;
 using System.Linq;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class ShapesManager : MonoBehaviour
 {
     public Text ScoreText;
+  	public Text TimerText;
 
     public ShapesArray shapes;
 
     private int score;
+  	private int timeLeft;
+	public int startTime;
 
-    public readonly Vector2 BottomRight = new Vector2(-2.37f, -4.27f);
-    public readonly Vector2 FoodSize = new Vector2(1.0f, 1.0f);
+  public GameObject getScoreMenu;
+
+    public static bool timed;
+
+    public static int Rows = 12;
+    public static int Columns = 8;
+
+    public static int Match3Score = 50;
+    public static int SubsequentMatchScore = 1000;
+
+    public ShapesManager()
+    {
+      Constants.Rows = Rows;
+      Constants.Columns = Columns;
+      Constants.Match3Score = Match3Score;
+      Constants.SubsequentMatchScore = SubsequentMatchScore;
+    }
+
+
+  	public Vector2 BottomRight = new Vector2(-5.25f, -3.77f);
+  	public Vector2 FoodSize = new Vector2(1f, 1f);
 
     private GameState state = GameState.None;
     private GameObject hitGo = null;
@@ -29,6 +53,8 @@ public class ShapesManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        getScoreMenu.SetActive(false);
+
         InitializeTypesOnPrefabShapesAndBonuses();
 
         InitializeFoodAndSpawnPositions();
@@ -127,6 +153,9 @@ public class ShapesManager : MonoBehaviour
         GameObject go = Instantiate(newFood,
             BottomRight + new Vector2(column * FoodSize.x, row * FoodSize.y), Quaternion.identity)
             as GameObject;
+
+
+        go.transform.localScale = new Vector3(FoodSize.x, FoodSize.y, 1.0f);
 
         //assign the specific properties
         go.GetComponent<Shape>().Assign(newFood.GetComponent<Shape>().Type, row, column);
@@ -326,6 +355,7 @@ public class ShapesManager : MonoBehaviour
                     as GameObject;
 
                 newFood.GetComponent<Shape>().Assign(go.GetComponent<Shape>().Type, item.Row, item.Column);
+                newFood.transform.localScale = new Vector3(FoodSize.x, FoodSize.y, 1.0f);
 
                 if (Constants.Rows - item.Row > newFoodInfo.MaxDistance)
                     newFoodInfo.MaxDistance = Constants.Rows - item.Row;
@@ -371,7 +401,14 @@ public class ShapesManager : MonoBehaviour
     private void InitializeVariables()
     {
         score = 0;
+    		timeLeft = startTime;
         ShowScore();
+        if (timed) {
+      		ShowTime();
+      		InvokeRepeating("DecrementTime", 1.0f, 1.0f);
+        } else {
+          TimerText.enabled = false;
+        }
     }
 
     private void IncreaseScore(int amount)
@@ -383,6 +420,65 @@ public class ShapesManager : MonoBehaviour
     private void ShowScore()
     {
         ScoreText.text = "Score: " + score.ToString();
+    }
+
+  	private void DecrementTime() {
+  		timeLeft--;
+      if (timeLeft < 0) {
+        EndGame(score);
+      }
+  		ShowTime();
+  	}
+
+    private void ShowTime() {
+      if ((timeLeft % 60) == 0) {
+        TimerText.text = "Time Remaining: " + (timeLeft / 60).ToString() + ":00";
+      } else {
+        TimerText.text = "Time Remaining: " + (timeLeft / 60).ToString() + ":" + (timeLeft % 60).ToString();
+      }
+    }
+
+    public void ButtonEnd() {
+      EndGame(score);
+    }
+
+    private void EndGame(int finalScore) {
+      if (finalScore > 0) {
+        // GameObject getScoreMenu = Instantiate(ScoreGetPrefab);
+        getScoreMenu.SetActive(true);
+        Text subScoreLabel = getScoreMenu.transform.Find("ScoreGetterBack").gameObject.transform.Find("Score").GetComponent<Text>();
+        subScoreLabel.text = finalScore.ToString();
+      } else {
+        LeaveToMenu();
+      }
+    }
+
+    public void SumbitScore() {
+      AddHighscore(score);
+      LeaveToMenu();
+    }
+
+    public void AddHighscore(int finalScore) {
+      for (int i = 4; i >= 0; i--) {
+        if (Constants.topScores[i] < finalScore) {
+          if (i != 4) {
+            Constants.topScores[i+1] = Constants.topScores[i];
+          }
+          Constants.topScores[i] = finalScore;
+        } else {
+          break;
+        }
+      }
+      StreamWriter writer = new StreamWriter("scores.txt");
+      foreach (int score in Constants.topScores) {
+        writer.WriteLine(score.ToString());
+      }
+      writer.Close();
+    }
+
+    public void LeaveToMenu() {
+      getScoreMenu.SetActive(false);
+      SceneManager.LoadScene("main-menu");
     }
 
     /// <summary>

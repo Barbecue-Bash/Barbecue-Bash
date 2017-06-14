@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/main-menu.unity
+    guid: a9fbfe48073eb46e5b616ec1ebb24906
+  - enabled: 1
+    path: Assets/Scenes/iphone.unity
+    guid: b76de3afdafaa4f8dbd5768bf903633f
+  - enabled: 1
+    path: Assets/Scenes/scores.unity
+    guid: 85181a1e67e36411890b5793846d246c

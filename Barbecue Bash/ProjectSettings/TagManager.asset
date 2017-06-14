@@ -46,9 +46,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UIBack
+    uniqueID: 752892951
+    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: UITiles
-    uniqueID: 752892951
     locked: 0
